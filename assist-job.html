@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assist Job</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="" />
+      <img src="menu.png" alt="" />
+    </header>
+    <section class="container">
+      <div class="leftSection">
+        <div class="profileSection">
+          <img src="avatar.webp" alt="" />
+          <h2>Name: Sanket Chaudhary</h2>
+          <h3>Unique ID: RJA1</h3>
+        </div>
+        <div class="menuSection">
+          <a class="active" href="assist-job.html">Assist Job</a>
+          <div class="dropdown">
+            <a href="#">New Request/Your Handles</a>
+            <a href="#">First Helper</a>
+            <a href="#">Second Helper</a>
+            <a href="#">Third Helper</a>
+          </div>
+          <a href="index.html">Helper ID</a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="searchSec">
+          <div class="searchBar">
+            <input
+              type="text"
+              placeholder="Search by Name"
+              name="search"
+              id="searchBar"
+            />
+            <button type="submit" id="search" onclick="myFunction()">
+              Search
+            </button>
+
+            <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+          </div>
+        </div>
+        <div class="table">
+          <table id="customers">
+            <tr>
+              <th style="text-align: center">S.No</th>
+              <th style="text-align: center">Date</th>
+              <th style="text-align: center">Unique Id</th>
+              <th style="text-align: center">Name</th>
+              <th style="text-align: center">Mobile No.</th>
+              <th style="text-align: center">Service</th>
+              <th style="text-align: center">Application</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Franchise</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Broker</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Franchise</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>12-11-2022</td>
+              <td>RP-A-3240</td>
+              <td>Mr. Suresh Ramesh</td>
+              <td>9876-987-876</td>
+              <td>Industry</td>
+              <td><a href="#" id="myBtn">View</a></td>
+            </tr>
+          </table>
+        </div>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="loader"></div>
+          </div>
+        </div>
+        <div class="paginationSection">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <!-- <a href="#">1</a> -->
+            <a class="active" href="#">1</a>
+            <!-- <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a> -->
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

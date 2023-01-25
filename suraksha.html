@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Riyo Paarivar </title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="public/css/table.css" />
+    <style>
+        .menuSection {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/public/images/logo.png" alt="" />
+        <img src="public/images/menu.png" alt="" />
+    </header>
+    <section class="tableSection">
+        <div class="leftSection">
+            <div class="profileSection">
+                <img src="public/images/avatar.webp" alt="" />
+                <h2>Name: Sanket Chaudhary</h2>
+                <h3>Unique ID: RJA1</h3>
+            </div>
+            <div class="menuSections">
+                <div class="items" >
+                    <a href="paarivar.html" class="menu" >RIYO Parivaar Application</a>
+                </div>
+                <div class="items" style="background-color: #0d61d3;">
+                    <a href="suraksha.html" class="menu" id="activeItem">RIYO Suraksha Application</a>
+                </div>
+                <div class="items">
+                    <a href="first.html" class="menu">Assist Job</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightSection">
+            <div class="searchSec">
+                <div class="searchBar">
+                    <input type="text" placeholder="Search by Name" name="search" id="searchBar" />
+                    <button type="submit" id="search" onclick="searchBarFunction()">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <!-- <div style="width: 95%;">
+          <table id="customers" style="width: 100%;">
+            <thead>
+              <tr>
+                <th style="text-align: center"> <a href="/riyo-parivaar-application" style="color: #fff">New Registration</a></th>
+                <th style="text-align: center" class="inactive"><a href="/job-assistant-acceptedList" class="inactive">Accepted</a></th>
+                <th style="text-align: center" class="inactive"><a href="/job-assistant-rejectedList" >Rejected</a></th>
+              </tr>
+          </thead>
+          </table>
+        </div> -->
+            <div class="table">
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">S.No</th>
+                            <th style="text-align: center">Date</th>
+                            <th style="text-align: center">Name</th>
+                            <th style="text-align: center">Unique Id</th>
+                            <th style="text-align: center">Account Type</th>
+                            <th style="text-align: center">Number</th>
+                            <th style="text-align: center">No. Of Job</th>
+                            <th style="text-align: center">Job Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center">1</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">3</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">2</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">7</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">3</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">6</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">4</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">4</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">5</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">8</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">6</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">5</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">7</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">6</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">8</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">4</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">9</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">8</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">10</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">RP-A-9876</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center">15</td>
+                            <td style="text-align: center"><a href="view_suraksha.html">View</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script>
+        function searchBarFunction() {
+            var input, filter, table, tr, id, name, i, txtValue;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("customers");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                id = tr[i].getElementsByTagName("td")[3];
+                name = tr[i].getElementsByTagName("td")[2];
+                if (id || name) {
+                    txtValue =
+                        id.textContent ||
+                        id.innerText ||
+                        name.textContent ||
+                        name.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

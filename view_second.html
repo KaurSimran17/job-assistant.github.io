@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        New Registration
+    </title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="public/css/table.css" />
+    <style>
+        .menuSection {
+            background-color: transparent;
+        }
+
+        #myModal {
+            height: auto;
+        }
+
+        .rightSection {
+            padding-right: 0px;
+        }
+
+        #userCard {
+            width: 70%;
+        }
+
+        .salaryCol {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .salaryCol .iconText {
+            color: #ee6c4d;
+        }
+
+        #vehicleDetails .vehicle .driverTable .cash span {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #ee6c4d;
+        }
+
+        #vehicleDetails .vehicle .userDetailss {
+            padding: 10px;
+            width: 55%;
+        }
+
+        #vehicleDetails .vehicle .userDetails #drivertable {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #505050;
+        }
+
+        .assist {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="public/images/logo.png" alt="" />
+        <img src="public/images/menu.png" alt="" />
+    </header>
+    <section class="tableSection" id="tableSection">
+        <div class="leftSection">
+            <div class="profileSection">
+                <img src="public/images/avatar.webp" alt="" />
+                <h2>Name: Sanket Chaudhary</h2>
+                <h3>Unique ID: RJA1</h3>
+            </div>
+            <div class="menuSections">
+                <div class="items">
+                    <a href="paarivar.html" class="menu">RIYO Parivaar Application</a>
+                </div>
+                <div class="items">
+                    <a href="suraksha.html" class="menu">RIYO Suraksha Application</a>
+                </div>
+                <div class="assist" style="background-color: #0d61d3;">
+                    <a href="" class="menu">Assist Job</a>
+                    <a href="first.html" class="menu" >New Registration</a>
+                    <a href="second.html" class="menu" style="color: #fff">Second Request</a>
+                    <a href="third.html" class="menu">Third Request </a>
+                    <a href="completelist.html" class="menu">Complete</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightSection">
+            <div class="searchSec">
+                <div class="searchBar">
+                    <input type="text" placeholder="Search by Name" name="search" id="searchBar" />
+                    <button type="submit" id="search" onclick="myFunction()">
+                        Search
+                    </button>
+
+                    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+                </div>
+            </div>
+            <div style="width: 95%;">
+                <table id="customers" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center"> <a href="/riyo-parivaar-application" style="color: #fff">New
+                                    Registration</a></th>
+                            <th style="text-align: center" class="inactive"><a href="/suraksha-acceptedList"
+                                    class="inactive">Accepted</a></th>
+                            <th style="text-align: center" class="inactive"><a
+                                    href="/suraksha-rejectedList">Rejected</a></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="table">
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">S.No</th>
+                            <th style="text-align: center">Date</th>
+                            <th style="text-align: center">Name</th>
+                            <th style="text-align: center">Unique Id</th>
+                            <th style="text-align: center">Account Type</th>
+                            <th style="text-align: center">Number</th>
+                            <th style="text-align: center">Job Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center">1</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">Suresh Ramesh</td>
+                            <td style="text-align: center">RP-A-3240</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center"> <a href="/job-assistant-rejected">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">2</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">Suresh Ramesh</td>
+                            <td style="text-align: center">RP-A-3240</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center"> <a href="/job-assistant-rejected">View</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">3</td>
+                            <td style="text-align: center">12-11-2022</td>
+                            <td style="text-align: center">Suresh Ramesh</td>
+                            <td style="text-align: center">RP-A-3240</td>
+                            <td style="text-align: center">Paid</td>
+                            <td style="text-align: center">6547-098-986</td>
+                            <td style="text-align: center"> <a href="/job-assistant-rejected">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="paginationSection">
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">1</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div> -->
+            <div id="myModal" class="modalParivaar">
+                <div class="modal-content suraksha" id="userCard">
+                    <span class="close"> <a href="second.html">&times;</a> </span>
+                    <div class="date">
+                        <p>Date: <b>
+                                12-11-2022
+                            </b> </p>
+                        <p>Time: <b>
+                                12:00 pm
+                            </b> </p>
+                    </div> <br>
+                    <div class="detail-section">
+                        <div class="userSection">
+                            <div class="imageSec">
+                                <img src="public/images/avatar.webp" alt="" />
+                            </div>
+                            <div class="userDetails">
+                                <ul>
+                                    <li> Name: <b>
+                                            Sanket Sexna
+                                        </b> </li>
+                                    <li>Unique ID: <b>
+                                            12345432
+                                        </b> </li>
+                                    <li>Account Type: <b>Paid</b> </li>
+                                </ul>
+                                <div class="managerSec">
+                                    <span> <b>Manager</b> </span>
+                                    <ul>
+                                        <li>Name: <b>
+                                                Sanket Sexna
+                                            </b> </li> <br>
+                                        <li>Mobile Number: <b>
+                                                9876453654
+                                            </b> </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="documentSection docSec" id="documentSection">
+                            <div class="boxes">
+                                <div class="aadharBox">
+                                    <p>
+                                        Click to view
+                                    </p>
+                                    <a href="<%= acceptedsurakshauser.createdAt %>">Aadhar Card</a>
+                                </div>
+                                <div class="licenseBox">
+
+                                    <p>
+                                        Click to view
+                                    </p>
+                                    <a href="<%= acceptedsurakshauser.createdAt %>">License</a>
+                                </div>
+                            </div>
+                            <div class="contactDetails">
+                                <p>Mobile Number: <a href="tel:<%= acceptedsurakshauser.number %>">
+                                        9876-453-654
+                                    </a> </p>
+                            </div>
+                        </div>
+                    </div> <br>
+                    <div class="vehicleDetails">
+                        <div class="heading headingVehicle">
+                            <p>Job Vacancy( <span id="numberOfVehicle">
+                                    03
+                                </span>)</p>
+                            <div class="date">
+                                <span>Date: <b>
+                                        12-11-2022
+                                    </b> </span>
+                                <span>Time: <b>
+                                        12:00 pm
+                                    </b> </span>
+                            </div>
+                        </div>
+                        <form action="/accept/suraksharuser/<%= acceptedsurakshauser._id%>" id="vehicleDetails"
+                            method="post">
+                            <div class="vehicle">
+                                <div class="date" style="padding: 20px 0 0 20px;">
+                                    <p>Date: <b>
+                                            12-11-2022
+                                        </b> </p>
+                                    <p>Time: <b>
+                                            12:00 pm
+                                        </b> </p>
+                                </div>
+                                <div class="upper">
+
+                                    <div class="userDetails">
+                                        <p>Vehicle Info.</p>
+                                        <ul>
+                                            <li>Vehicle Number: <b>
+                                                    UP 80 AF 6723
+                                                </b></li>
+                                            <li>Body Type: <b>
+                                                    Dala Body
+                                                </b></li>
+                                            <li>Truck Size: <b>
+                                                    17-22 ft
+                                                </b></li>
+                                            <li>No. of Axel: <b>
+                                                    Multi Axel
+                                                </b></li>
+                                            <li>Area of Driving: <b>
+                                                    All India
+                                                </b></li>
+                                            <li>Zone: <b>
+                                                    West
+                                                </b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="documentSection">
+                                        <h2>Documents</h2>
+                                        <div class="boxes">
+                                            <div class="aadharBox">
+                                                <p>
+                                                    Click to view
+                                                </p>
+                                                <a href="<%= acceptedsurakshauser.expiryOfSP %>">Permit</a>
+                                            </div>
+                                            <div class="aadharBox">
+                                                <p>
+                                                    Click to view
+                                                </p>
+                                                <a href="<%= acceptedsurakshauser.expiryOfInsurance %>">Insurance</a>
+                                            </div>
+                                            <div class="aadharBox">
+                                                <p>
+                                                    Click to view
+                                                </p>
+                                                <a href="<%= acceptedsurakshauser.expiryOfTax %>">Road TAX</a>
+                                            </div>
+                                            <div class="licenseBox">
+
+                                                <p>
+                                                    Click to view
+                                                </p>
+                                                <a href="<%= acceptedsurakshauser.smartCardImg %>">Smart Card</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lower">
+                                    <img src="/images/hori.png" alt="">
+                                    <div class="salaryCol">
+                                        <p>Owner Realised Salary</p>
+                                        <!-- <div class="salary"> -->
+                                        <div class="icon iconText">₹ 6500/-
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="driverTable">
+                                    <p id="drivertable">Driver Selected</p>
+                                    <span>Select any three driver.</span>
+                                    <div class="table">
+                                        <table id="customers">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align: center">Date</th>
+                                                    <th style="text-align: center">Unique Id</th>
+                                                    <th style="text-align: center">RIYO Credit</th>
+                                                    <th style="text-align: center">Salary</th>
+                                                    <th style="text-align: center">Profile</th>
+                                                    <th style="text-align: center">Select any three</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: center">12-11-2022</td>
+                                                    <td style="text-align: center">RP-A-9876</td>
+                                                    <td style="text-align: center">50</td>
+                                                    <td style="text-align: center">₹ 6500/-</td>
+                                                    <td style="text-align: center"><a href="">View</a></td>
+                                                    <td style="text-align: center"><img src="public/images/done.png"
+                                                            alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center">12-11-2022</td>
+                                                    <td style="text-align: center">RP-A-9876</td>
+                                                    <td style="text-align: center">50</td>
+                                                    <td style="text-align: center">₹ 6500/-</td>
+                                                    <td style="text-align: center"><a href="">View</a></td>
+                                                    <td style="text-align: center"><img src="public/images/done.png"
+                                                            alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center">12-11-2022</td>
+                                                    <td style="text-align: center">RP-A-9876</td>
+                                                    <td style="text-align: center">50</td>
+                                                    <td style="text-align: center">₹ 6500/-</td>
+                                                    <td style="text-align: center"><a href="">View</a></td>
+                                                    <td style="text-align: center"><img src="public/images/done.png"
+                                                            alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center">12-11-2022</td>
+                                                    <td style="text-align: center">RP-A-9876</td>
+                                                    <td style="text-align: center">50</td>
+                                                    <td style="text-align: center">₹ 6500/-</td>
+                                                    <td style="text-align: center"><a href="">View</a></td>
+                                                    <td style="text-align: center"><img src="public/images/done.png"
+                                                            alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center">12-11-2022</td>
+                                                    <td style="text-align: center">RP-A-9876</td>
+                                                    <td style="text-align: center">50</td>
+                                                    <td style="text-align: center">₹ 6500/-</td>
+                                                    <td style="text-align: center"><a href="">View</a></td>
+                                                    <td style="text-align: center"><img src="public/images/done.png"
+                                                            alt=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="vehicleDetails">
+                                <form action="/accept/suraksharuser/<%= acceptedsurakshauser._id%>" id="vehicleDetails"
+                                    method="post">
+                                    <div class="vehicle">
+                                        <div class="date" style="padding: 20px 0 0 20px;">
+                                            <p>Date: <b>
+                                                    12-11-2022
+                                                </b> </p>
+                                            <p>Time: <b>
+                                                    12:00 pm
+                                                </b> </p>
+                                        </div>
+                                        <div class="upper">
+
+                                            <div class="userDetails">
+                                                <p>Vehicle Info.</p>
+                                                <ul>
+                                                    <li>Vehicle Number: <b>
+                                                            UP 80 AF 6723
+                                                        </b></li>
+                                                    <li>Body Type: <b>
+                                                            Dala Body
+                                                        </b></li>
+                                                    <li>Truck Size: <b>
+                                                            17-22 ft
+                                                        </b></li>
+                                                    <li>No. of Axel: <b>
+                                                            Multi Axel
+                                                        </b></li>
+                                                    <li>Area of Driving: <b>
+                                                            All India
+                                                        </b></li>
+                                                    <li>Zone: <b>
+                                                            West
+                                                        </b></li>
+                                                </ul>
+                                            </div>
+                                            <div class="documentSection">
+                                                <h2>Documents</h2>
+                                                <div class="boxes">
+                                                    <div class="aadharBox">
+                                                        <p>
+                                                            Click to view
+                                                        </p>
+                                                        <a href="<%= acceptedsurakshauser.expiryOfSP %>">Permit</a>
+                                                    </div>
+                                                    <div class="aadharBox">
+                                                        <p>
+                                                            Click to view
+                                                        </p>
+                                                        <a
+                                                            href="<%= acceptedsurakshauser.expiryOfInsurance %>">Insurance</a>
+                                                    </div>
+                                                    <div class="aadharBox">
+                                                        <p>
+                                                            Click to view
+                                                        </p>
+                                                        <a href="<%= acceptedsurakshauser.expiryOfTax %>">Road TAX</a>
+                                                    </div>
+                                                    <div class="licenseBox">
+
+                                                        <p>
+                                                            Click to view
+                                                        </p>
+                                                        <a href="<%= acceptedsurakshauser.smartCardImg %>">Smart
+                                                            Card</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lower">
+                                            <img src="/images/hori.png" alt="">
+                                            <div class="salaryCol">
+                                                <p>Owner Realised Salary</p>
+                                                <!-- <div class="salary"> -->
+                                                <div class="icon iconText">₹ 6500/-
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="driverTable">
+                                            <p id="drivertable">Driver Selected</p>
+                                            <span>Select any three driver.</span>
+                                            <div class="table">
+                                                <table id="customers">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="text-align: center">Date</th>
+                                                            <th style="text-align: center">Unique Id</th>
+                                                            <th style="text-align: center">RIYO Credit</th>
+                                                            <th style="text-align: center">Salary</th>
+                                                            <th style="text-align: center">Profile</th>
+                                                            <th style="text-align: center">Select any three</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="text-align: center">12-11-2022</td>
+                                                            <td style="text-align: center">RP-A-9876</td>
+                                                            <td style="text-align: center">50</td>
+                                                            <td style="text-align: center">₹ 6500/-</td>
+                                                            <td style="text-align: center"><a href="">View</a></td>
+                                                            <td style="text-align: center"><img
+                                                                    src="public/images/done.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: center">12-11-2022</td>
+                                                            <td style="text-align: center">RP-A-9876</td>
+                                                            <td style="text-align: center">50</td>
+                                                            <td style="text-align: center">₹ 6500/-</td>
+                                                            <td style="text-align: center"><a href="">View</a></td>
+                                                            <td style="text-align: center"><img
+                                                                    src="public/images/done.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: center">12-11-2022</td>
+                                                            <td style="text-align: center">RP-A-9876</td>
+                                                            <td style="text-align: center">50</td>
+                                                            <td style="text-align: center">₹ 6500/-</td>
+                                                            <td style="text-align: center"><a href="">View</a></td>
+                                                            <td style="text-align: center"><img
+                                                                    src="public/images/done.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: center">12-11-2022</td>
+                                                            <td style="text-align: center">RP-A-9876</td>
+                                                            <td style="text-align: center">50</td>
+                                                            <td style="text-align: center">₹ 6500/-</td>
+                                                            <td style="text-align: center"><a href="">View</a></td>
+                                                            <td style="text-align: center"><img
+                                                                    src="public/images/done.png" alt=""></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: center">12-11-2022</td>
+                                                            <td style="text-align: center">RP-A-9876</td>
+                                                            <td style="text-align: center">50</td>
+                                                            <td style="text-align: center">₹ 6500/-</td>
+                                                            <td style="text-align: center"><a href="">View</a></td>
+                                                            <td style="text-align: center"><img
+                                                                    src="public/images/done.png" alt=""></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="vehicleDetails">
+                                        <form action="/accept/suraksharuser/<%= acceptedsurakshauser._id%>"
+                                            id="vehicleDetails" method="post">
+                                            <div class="vehicle">
+                                                <div class="date" style="padding: 20px 0 0 20px;">
+                                                    <p>Date: <b>
+                                                            12-11-2022
+                                                        </b> </p>
+                                                    <p>Time: <b>
+                                                            12:00 pm
+                                                        </b> </p>
+                                                </div>
+                                                <div class="upper">
+
+                                                    <div class="userDetails">
+                                                        <p>Vehicle Info.</p>
+                                                        <ul>
+                                                            <li>Vehicle Number: <b>
+                                                                    UP 80 AF 6723
+                                                                </b></li>
+                                                            <li>Body Type: <b>
+                                                                    Dala Body
+                                                                </b></li>
+                                                            <li>Truck Size: <b>
+                                                                    17-22 ft
+                                                                </b></li>
+                                                            <li>No. of Axel: <b>
+                                                                    Multi Axel
+                                                                </b></li>
+                                                            <li>Area of Driving: <b>
+                                                                    All India
+                                                                </b></li>
+                                                            <li>Zone: <b>
+                                                                    West
+                                                                </b></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="documentSection">
+                                                        <h2>Documents</h2>
+                                                        <div class="boxes">
+                                                            <div class="aadharBox">
+                                                                <p>
+                                                                    Click to view
+                                                                </p>
+                                                                <a
+                                                                    href="<%= acceptedsurakshauser.expiryOfSP %>">Permit</a>
+                                                            </div>
+                                                            <div class="aadharBox">
+                                                                <p>
+                                                                    Click to view
+                                                                </p>
+                                                                <a
+                                                                    href="<%= acceptedsurakshauser.expiryOfInsurance %>">Insurance</a>
+                                                            </div>
+                                                            <div class="aadharBox">
+                                                                <p>
+                                                                    Click to view
+                                                                </p>
+                                                                <a href="<%= acceptedsurakshauser.expiryOfTax %>">Road
+                                                                    TAX</a>
+                                                            </div>
+                                                            <div class="licenseBox">
+
+                                                                <p>
+                                                                    Click to view
+                                                                </p>
+                                                                <a href="<%= acceptedsurakshauser.smartCardImg %>">Smart
+                                                                    Card</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="lower">
+                                                    <img src="/images/hori.png" alt="">
+                                                    <div class="salaryCol">
+                                                        <p>Owner Realised Salary</p>
+                                                        <!-- <div class="salary"> -->
+                                                        <div class="icon iconText">₹ 6500/-
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="driverTable">
+                                                    <p id="drivertable">Driver Selected</p>
+                                                    <span>Select any three driver.</span>
+                                                    <div class="userCard">
+                                                        <div class="date">
+                                                            <p>Date: <b>
+                                                                    12-11-2022
+                                                                </b> </p>
+                                                            <p>Time: <b>
+                                                                    12:00 pm
+                                                                </b> </p>
+                                                        </div> <br>
+                                                        <div class="detail-section">
+                                                            <div class="userSection">
+                                                                <div class="imageSec">
+                                                                    <img src="public/images/avatar.webp" alt="" />
+                                                                </div>
+                                                                <div class="userDetailss">
+                                                                    <ul>
+                                                                        <li> Name: <b>
+                                                                                Sanket Sexna
+                                                                            </b> </li>
+                                                                        <li>Unique ID: <b>
+                                                                                12345432
+                                                                            </b> </li>
+                                                                        <li>Account Type: <b>Paid</b> </li>
+                                                                        <li>Vehicle Type: <b>
+                                                                                Truck
+                                                                            </b> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="documentSection">
+                                                                <div class="boxes">
+                                                                    <div class="aadharBox">
+                                                                        <p>
+                                                                            Click to view
+                                                                        </p>
+                                                                        <a
+                                                                            href="<%= acceptedpaarivaruser.aadharImg_PAARIVAR %>">Aadhar
+                                                                            Card</a>
+                                                                    </div>
+                                                                    <div class="licenseBox">
+
+                                                                        <p>
+                                                                            Click to view
+                                                                        </p>
+                                                                        <a
+                                                                            href="<%= acceptedpaarivaruser.licenseImg_PAARIVAR %>">License</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="contactDetails">
+                                                                    <p>Mobile Number: <a
+                                                                            href="tel:<%= acceptedpaarivaruser.number_PAARIVAR %>">
+                                                                            9876-453-654
+                                                                        </a> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div> <br>
+                                                        <div class="driverDetails">
+                                                            <div class="heading">
+                                                                <p>Driver Quality</p>
+                                                            </div>
+                                                            <div class="list">
+                                                                <ul>
+                                                                    <li>Body Type: <b> Trailer, Tanker, Dala Body </b>
+                                                                    </li>
+                                                                    <li>Truck Size:<b> 17-22 ft, 32-40 ft</b></li>
+                                                                    <li>No. Of Axel: <b>Multi Axel</b></li>
+                                                                </ul>
+                                                                <img src="public/images/line.png" alt="" id="line">
+                                                                <ul>
+                                                                    <li>Area of Driving: <b>Local</b></li>
+                                                                    <li>District: <b>Aligarh</b></li>
+                                                                    <li>State:<b> Uttar Pradesh</b></li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                        <br />
+                                                        <div class="rejectionDetails">
+                                                            <div class="headingSec cash">
+                                                                <p class="heading">Driver Expected Salary</p>
+                                                                <span class="iconText">₹ 6500/-</span>
+                                                            </div>
+                                                            <div class="date">
+                                                                <p>Date: <b>
+                                                                        12-11-2022
+                                                                    </b> </p>
+                                                                <p>Time: <b>
+                                                                        12:00 pm
+                                                                    </b> </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <input type="submit" value="Sent" class="accept">
+                                    </div>
+                                </form>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, id, name, i, txtValue;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("customers");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                id = tr[i].getElementsByTagName("td")[2];
+                name = tr[i].getElementsByTagName("td")[3];
+                if (id || name) {
+                    txtValue =
+                        id.textContent ||
+                        id.innerText ||
+                        name.textContent ||
+                        name.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+
+    </script>
+    <script>
+        function backTo() {
+            document.getElementById('rejected').style.display = "none";
+            document.getElementById('userCard').style.display = "block";
+        }
+
+        function backToRejection() {
+            document.getElementById('rejected').style.display = "block";
+            document.getElementById('userCard').style.display = "none";
+            document.getElementById('myModal').style.height = "100%";
+            // document.getElementById('tableSection').style.height = "80vh";
+        }
+    </script>
+    <script>
+        let numberOfVehicle = document.getElementById('numberOfVehicle').innerText;
+        console.log(numberOfVehicle);
+        if (numberOfVehicle == 1) {
+            document.getElementById('twoV').style.display = 'none';
+            document.getElementById('threeV').style.display = 'none';
+        }
+        else if (numberOfVehicle == 2) {
+            document.getElementById('twoV').style.display = 'block';
+            document.getElementById('threeV').style.display = 'none';
+        }
+        else if (numberOfVehicle == 3) {
+            document.getElementById('twoV').style.display = 'block';
+            document.getElementById('threeV').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
