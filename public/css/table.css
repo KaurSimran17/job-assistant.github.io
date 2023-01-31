@@ -1324,3 +1324,52 @@ tbody tr td img{
   padding: 10px;
   width: 55%;
 }
+
+
+.jobStarted{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.jobStarted .accept {
+  background: transparent;
+  height: 100%;
+  color: #0d61d3;
+  border: 1px solid #0d61d3;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 30px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 20%;
+}
+.b{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  width: 70%;
+}
+
+.flex .Helper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+.Helper .accept {
+  background: transparent;
+  height: 100%;
+  color: #0d61d3;
+  border: 1px solid #0d61d3;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 30px;
+  font-size: 12px;
+  cursor: pointer;
+  /* width: 20%; */
+  margin-right: 10px;
+  margin-top: 5px;
+}
